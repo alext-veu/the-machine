@@ -1,0 +1,3 @@
+import {useEffect} from 'react';
+// Safari's visual viewport shrinks independently when the software keyboard opens.
+export function usePhoneViewport(){useEffect(()=>{const viewport=window.visualViewport;const update=()=>{document.documentElement.style.setProperty('--phone-height',`${viewport?.height||window.innerHeight}px`);document.documentElement.classList.toggle('keyboard-open',!!viewport&&window.innerHeight-viewport.height>140);};update();viewport?.addEventListener('resize',update);window.addEventListener('resize',update);return()=>{viewport?.removeEventListener('resize',update);window.removeEventListener('resize',update);document.documentElement.style.removeProperty('--phone-height');document.documentElement.classList.remove('keyboard-open');};},[]);}
