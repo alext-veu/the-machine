@@ -172,3 +172,11 @@ git push
 ```
 
 GitHub stores the source and commit history; pushing does **not** automatically publish to ChatGPT Sites. Site updates use the Sites source workflow to package the exact source state, save a version and deploy it. Retain the Site identity in `.openai/hosting.json` and its public audience. GitHub repository privacy is independent of the live Site's visibility.
+
+## Manhattan map
+
+The map uses NYC Open Data building footprints and roof heights (5zhs-2jue), named street centerlines (inkn-q76z), and shoreline-clipped borough boundaries (gthc-hcne). All 45,194 Manhattan building footprints are bundled. Buildings are simplified flat roof extrusions, with a 4 m fallback where a roof height is absent. Street and avenue names appear at closer zoom levels, with collision spacing for phones. The surveillance identities, camera feeds and traffic remain fictional. Central Park is a schematic green overlay.
+
+Select a district to focus its area, then scroll/pinch to zoom and drag to orbit. North is negative Z; scene units represent 100 metres. Geometry uses a local WGS84 approximation centered at 73.975° W, 40.78° N, quantized to 1 m. The initial map download includes approximately 11 MB of compressed building geometry and is cached within the session. No map API key is required.
+
+Regenerate the bundled snapshot with `node scripts/build-manhattan.mjs` (requires network access), then `npm run build`. Data sources: [Buildings](https://data.cityofnewyork.us/City-Government/BUILDING/5zhs-2jue), [Streets](https://data.cityofnewyork.us/City-Government/Centerline/inkn-q76z), [Boundary](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/gthc-hcne).

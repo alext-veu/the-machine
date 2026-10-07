@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';
+import {gzipSync} from 'node:zlib';
+import * as THREE from 'three';
+// WGS84 local tangent approximation; 100 metres per scene unit, north = -Z.
+const project=([lon,lat])=>[+( (lon+73.975)*84300/100).toFixed(3),+(-(lat-40.78)*111320/100).toFixed(3)];
+async function rows(id,select,where){const out=[];for(let offset=0;;offset+=10000){const u=new URL(`https://data.cityofnewyork.us/resource/${id}.json`);for(const [k,v] of Object.entries({$select:select,$where:where,$limit:'10000',$offset:String(offset),$order:':id'}))u.searchParams.set(k,v);const r=await fetch(u);if(!r.ok)throw Error(`${id}: ${r.status} ${await r.text()}`);const page=await r.json();out.push(...page);console.log(id,offset,page.length);if(page.length<10000)return out;}}
+const [buildings,streets,land]=await Promise.all([rows('5zhs-2jue','the_geom,height_roof,bin','bin >= 1000000 AND bin < 2000000'),rows('inkn-q76z','the_geom,full_street_name,stname_label,physicalid',"boroughcode = '1'"),rows('gthc-hcne','the_geom,boroname',"boroname = 'Manhattan'")]);
+const vertices=[];let count=0;
+for(const b of buildings)for(const polygon of b.the_geom.coordinates){const rings=polygon.map(r=>r.slice(0,-1).map(project));if(rings[0].length<3)continue;const shape=new THREE.Shape(rings[0].map(([x,z])=>new THREE.Vector2(x,-z)));for(const ring of rings.slice(1))shape.holes.push(new THREE.Path(ring.map(([x,z])=>new THREE.Vector2(x,-z))));const h=Math.max(.035,Math.min(5,Number(b.height_roof||13)*.3048/100));const geo=new THREE.ExtrudeGeometry(shape,{depth:h,bevelEnabled:false,steps:1});geo.rotateX(-Math.PI/2);const p=geo.getAttribute('position');for(let i=0;i<p.count;i++)vertices.push(p.getX(i),p.getY(i),p.getZ(i));geo.dispose();count++;}
+const roads=streets.flatMap(s=>s.the_geom.coordinates.map(r=>({name:s.stname_label||s.full_street_name,points:r.map(project)})));
+const outline=land.flatMap(s=>s.the_geom.coordinates.map(poly=>poly.map(r=>r.map(project))));
+await fs.mkdir('public/map',{recursive:true});const array=Int16Array.from(vertices,v=>Math.round(v*100));await fs.writeFile('public/map/buildings.bin.gz',gzipSync(new Uint8Array(array.buffer),{level:9}));await fs.writeFile('public/map/manhattan.json',JSON.stringify({projection:{origin:[-73.975,40.78],metresPerUnit:100},buildings:count,roads,land:outline,generated:new Date().toISOString(),sources:['5zhs-2jue','inkn-q76z','gthc-hcne']}));console.log({buildings:count,roads:roads.length,triangles:vertices.length/9,bytes:array.byteLength});

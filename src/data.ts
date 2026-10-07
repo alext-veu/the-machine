@@ -1,14 +1,14 @@
 export type Entity = {id:string; name:string; type:string; color:string; position:[number,number,number]; detail:string; risk:number};
 export const entities:Entity[]=[
-{id:'001',name:'ALEXANDER',type:'ADMINISTRATOR',color:'#d7ba67',position:[-7,1,6],detail:'PRIMARY ASSET · TRUST MAXIMUM',risk:0},
-{id:'002',name:'VICTOR',type:'PRIMARY ASSET',color:'#d7ba67',position:[7,1,2],detail:'PROTECTED · HIGH TRUST',risk:0},
-{id:'003',name:'BORIS',type:'PRIMARY ASSET',color:'#d7ba67',position:[2,1,-8],detail:'PROTECTED · HIGH TRUST',risk:0},
-{id:'004',name:'TOFFEE',type:'FELINE ASSET',color:'#d7ba67',position:[-3,1,-1],detail:'STRATEGIC NAPPING ASSET · BEHAVIOUR UNRELIABLE',risk:4},
-{id:'005',name:'VIOLETA',type:'MONITORED SUBJECT',color:'#e0e1dc',position:[10,1,-8],detail:'OBSERVATION CONTINUES',risk:7},
-{id:'10982',name:'ENTITY_10982',type:'IRRELEVANT',color:'#e0e1dc',position:[-12,1,-9],detail:'PREDICTION MODEL STABLE',risk:3},
-{id:'20117',name:'MUNICIPAL_17',type:'GOVERNMENT NODE',color:'#7a9fb8',position:[12,1,10],detail:'OFFICIAL SYSTEM · READ ONLY',risk:2}];
+{id:'001',name:'ALEXANDER',type:'ADMINISTRATOR',color:'#d7ba67',position:[-8.852,1,24.490],detail:'PRIMARY ASSET · TRUST MAXIMUM',risk:0},
+{id:'002',name:'VICTOR',type:'PRIMARY ASSET',color:'#d7ba67',position:[-17.703,1,55.660],detail:'PROTECTED · HIGH TRUST',risk:0},
+{id:'003',name:'BORIS',type:'PRIMARY ASSET',color:'#d7ba67',position:[-8.430,1,66.792],detail:'PROTECTED · HIGH TRUST',risk:0},
+{id:'004',name:'TOFFEE',type:'FELINE ASSET',color:'#d7ba67',position:[-5.817,1,13.247],detail:'STRATEGIC NAPPING ASSET · BEHAVIOUR UNRELIABLE',risk:4},
+{id:'005',name:'VIOLETA',type:'MONITORED SUBJECT',color:'#e0e1dc',position:[8.430,1,0.000],detail:'OBSERVATION CONTINUES',risk:7},
+{id:'10982',name:'ENTITY_10982',type:'IRRELEVANT',color:'#e0e1dc',position:[-28.662,1,81.264],detail:'PREDICTION MODEL STABLE',risk:3},
+{id:'20117',name:'MUNICIPAL_17',type:'GOVERNMENT NODE',color:'#7a9fb8',position:[-26.133,1,74.584],detail:'OFFICIAL SYSTEM · READ ONLY',risk:2}];
 export const cameras=['0031','0117','2048','7721'];
-export const districts=['MIDTOWN','LOWER EAST','WEST SECTOR','NORTH GRID'];
+export const districts=['MIDTOWN','GREENWICH VILLAGE','LOWER EAST SIDE','UPPER WEST SIDE'];
 export const story=[
 {state:'NORMAL',risk:7,title:'OBSERVATION CONTINUES',text:'The network is stable. An unclassified packet waits in the event archive.',action:'Inspect packet'},
 {state:'ANOMALY_01',risk:14,title:'ENCRYPTED TRAFFIC',text:'A domestic node is transmitting at unusual intervals. Trace the source.',action:'Trace source'},
