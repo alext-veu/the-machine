@@ -180,3 +180,7 @@ The map uses NYC Open Data building footprints and roof heights (5zhs-2jue), nam
 Select a district to focus its area, then scroll/pinch to zoom and drag to orbit. North is negative Z; scene units represent 100 metres. Geometry uses a local WGS84 approximation centered at 73.975° W, 40.78° N, quantized to 1 m. The initial map download includes approximately 11 MB of compressed building geometry and is cached within the session. No map API key is required.
 
 Regenerate the bundled snapshot with `node scripts/build-manhattan.mjs` (requires network access), then `npm run build`. Data sources: [Buildings](https://data.cityofnewyork.us/City-Government/BUILDING/5zhs-2jue), [Streets](https://data.cityofnewyork.us/City-Government/Centerline/inkn-q76z), [Boundary](https://data.cityofnewyork.us/City-Government/Borough-Boundaries/gthc-hcne).
+
+## Map navigation
+
+Default **Pan**: drag with the left mouse button or one finger to move over the map. Switch to **Rotate** for orbiting and tilting. Right mouse drag performs the alternate action. Use the mouse wheel/trackpad scroll or pinch with two fingers to zoom. In Pan mode two fingers also rotate; in Rotate mode two fingers also pan. The toolbar provides zoom, rotate, directional pan, face north and reset view buttons. Automatic GOD MODE camera rotation is disabled to keep navigation under your control. Focus the map with Tab for arrow key panning, +/− zoom, R rotation and 0 reset. Open GESTURES for contextual guidance.
