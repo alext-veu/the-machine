@@ -184,3 +184,9 @@ Regenerate the bundled snapshot with `node scripts/build-manhattan.mjs` (require
 ## Map navigation
 
 Default **Pan**: drag with the left mouse button or one finger to move over the map. Switch to **Rotate** for orbiting and tilting. Right mouse drag performs the alternate action. Use the mouse wheel/trackpad scroll or pinch with two fingers to zoom. In Pan mode two fingers also rotate; in Rotate mode two fingers also pan. The toolbar provides zoom, rotate, directional pan, face north and reset view buttons. Automatic GOD MODE camera rotation is disabled to keep navigation under your control. Focus the map with Tab for arrow key panning, +/− zoom, R rotation and 0 reset. Open GESTURES for contextual guidance.
+
+## Landmarks, lighting and brass clocks
+
+DAY / NIGHT changes map lighting and colors without moving the camera. EXPLORE LANDMARKS focuses six original, stylized models: Empire State Building, Chrysler Building, One World Trade Center, Flatiron Building, Brooklyn Bridge and Statue of Liberty. Crowns, spires, windows, bridge towers/cables and the copper-green statue are schematic details, not survey-grade replicas. Central Park includes a stylized tree canopy and reservoir. The four original building extrusions are replaced using official NYC footprint matches saved in `public/map/landmark-footprints.json`. Regeneration preserves these replacements.
+
+WORLD CLOCKS opens four polished brass analog dials with digital time and date: device-local, New York, London and Tokyo. Time comes from the device clock; IANA time zones in Intl handle daylight saving automatically. Clocks render as scalable original SVG with metallic bezels, engraved Roman numerals, glass highlights and live hands. No external clock service is required.
