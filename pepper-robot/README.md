@@ -30,6 +30,10 @@ Research and engineering workspace for restoring a **SoftBank Robotics / Aldebar
 
 Repository root README describes a separate *Person of Interest*-inspired web experience; this subproject is physical robotics R&D and does not change that application.
 
+## Latest family direction
+
+**Hotel AI Concierge is the primary proof of concept; college reception is the backup.** Boris designs personas, visitor questions and tablet UX; Victor helps test and demonstrate; Alexander leads engineering. See [family R&D roadmap](planning/family-rd-roadmap.md), [commercial discovery hypotheses](planning/product-discovery.md), and [GitHub adoption review](research/github-adoption-review-2026-11.md). The [public upgrade research page](https://alext-veu.github.io/the-machine/research/upgrade-landscape/) makes the findings accessible without access to the private repository (public deployment status must be checked).
+
 ## Existing AI upgrade research — start here
 
 Before designing new firmware or a commercial cloud platform, review our [**AI retrofit research catalogue**](research/README.md), containing:
