@@ -4,3 +4,5 @@ output/
 .playwright-cli/
 *.tsbuildinfo
 .openai/runtime/
+
+__pycache__/

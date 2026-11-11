@@ -4,6 +4,12 @@ Research and engineering workspace for restoring a **SoftBank Robotics / Aldebar
 
 **Status:** Robot not yet powered on; hardware revision, battery condition, NAOqi release and administrative credentials unknown. Purchase listings are leads, not verified orders. This folder contains links and original notes, not copies of third-party proprietary firmware or videos.
 
+## Teaser trailer — "The Awakening"
+
+[**Watch: Pepper Revival — The Awakening**](media/trailer/pepper-revival-the-awakening.mp4) (25 s, 1080p, with soundtrack). Built from our four concept stills by [`media/trailer/build_trailer.py`](media/trailer/build_trailer.py), which animates the camera moves, lighting and titles and synthesizes the original score; Pepper's line is a synthetic voice. Re-run the script to regenerate the film after changing stills, timing or music.
+
+For a version with real character motion, see the [cinematic v2 shot pack](media/trailer/cinematic-v2/README.md): tool recommendations, start/end keyframes and one prompt per shot for AI video generators.
+
 ## Start here
 
 1. [Restoration and recovery runbook](docs/restoration-runbook.md) — purchase charger; safe battery test; boot; identify version; gain access before deciding to reset.
