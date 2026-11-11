@@ -194,3 +194,7 @@ WORLD CLOCKS opens four polished brass analog dials with digital time and date: 
 ## Pepper Robot Revival — physical robotics project
 
 The [Pepper Robot Revival](pepper-robot/README.md) workspace documents restoration of a SoftBank/Aldebaran Pepper after an extended period without power, including charger purchasing options and prices, battery and hardware research, firmware/password recovery, open-source integrations, historical demonstration videos and an AI upgrade roadmap. Start with the [field restoration runbook](pepper-robot/docs/restoration-runbook.md) and [first power-on checklist](pepper-robot/checklists/first-power-on.md). This is a separate research subproject and does not change the web experience above.
+
+## Pepper // The Awakening — family website
+
+An [interactive Pepper revival site](docs/index.html) tells the story of finding Pepper in a cupboard, explores its cameras, microphones, navigation and battery life, and previews three future personalities (Companion, Explorer and Borg-inspired Collective). [Publishing instructions](docs/README.md): enable GitHub Pages from the `main` branch's `/docs` folder in repository Settings; the site is **not confirmed live**. The existing application and [technical Pepper research](pepper-robot/README.md) remain separate.
