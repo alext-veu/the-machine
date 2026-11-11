@@ -13,6 +13,10 @@ Research and engineering workspace for restoring a **SoftBank Robotics / Aldebar
 5. [Demos and open-source references](references/projects-and-videos.md) — descriptions, working project links, documentation and demonstrations.
 6. [Field checklist](checklists/first-power-on.md) — collect evidence during first inspection.
 
+## Trailer
+
+- [The Awakening](trailer/README.md) — 29-second cinematic teaser (version 3, November 2026), with keyframes, score, reference attributions and production notes.
+
 ## Current decision
 
 **Do not factory reset or flash firmware before identifying the installed version and preserving working software.** NAOqi 2.5 and 2.9 have incompatible application models. A NAOqi 2.5 factory reset may ask for a previously linked account; having an archived firmware image alone does not bypass a changed password.
