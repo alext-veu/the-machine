@@ -1,0 +1,72 @@
+PEPPER REVIVAL — reference stills
+Downloaded 11 November 2026 from Wikimedia Commons for keyframe likeness only.
+All eight files were visually verified as the original SoftBank / Aldebaran Pepper humanoid robot.
+
+01-front-studio-pepper-the-robot.jpg
+  Angle: Official front three-quarter packshot, full body, chest tablet, rounded wheeled base.
+  Commons: https://commons.wikimedia.org/wiki/File:Pepper_the_Robot.jpg
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/e/ee/Pepper_the_Robot.jpg
+  Licence: CC BY-SA 4.0
+  Author:  Softbank Robotics Europe (photograph: Philippe Dureuil / TOMA, 15 February 2016)
+  Size:    3840 x 5760
+
+02-face-closeup-innorobo-2015.JPG
+  Angle: Tight face / eyes close-up (green LED eye rings; ear speaker grilles). Second Pepper visible in background.
+  Commons: https://commons.wikimedia.org/wiki/File:Innorobo_2015_-_Aldebaran_-_Pepper_(face).JPG
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/0/02/Innorobo_2015_-_Aldebaran_-_Pepper_%28face%29.JPG
+  Licence: CC BY-SA 4.0
+  Author:  Xavier Caré / Wikimedia Commons, Innorobo Lyon, 2 July 2015
+  Size:    5184 x 3456
+
+03-fullbody-innorobo-2015.JPG
+  Angle: Straight-on full body, chest tablet lit, articulated arms and hands, triangular wheeled base.
+  Commons: https://commons.wikimedia.org/wiki/File:Innorobo_2015_-_Aldebaran_-_Pepper.JPG
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/a/ad/Innorobo_2015_-_Aldebaran_-_Pepper.JPG
+  Licence: CC BY-SA 4.0
+  Author:  Xavier Caré / Wikimedia Commons, Innorobo Lyon, 2 July 2015
+  Size:    2396 x 4530
+
+04-threequarter-softbank-pepper.JPG
+  Angle: High three-quarter / side, chest tablet in profile, ear LED ring, rounded three-lobed base.
+  Commons: https://commons.wikimedia.org/wiki/File:SoftBank_pepper.JPG
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/a/a1/SoftBank_pepper.JPG
+  Licence: CC0 1.0 Universal (public domain dedication)
+  Author:  Tokumeigakarinoaoshima, 18 July 2014
+  Size:    1920 x 2560
+
+05-off-screen-pepper-robot-off.jpg
+  Angle: Head lowered against a wall (inactive / “off” pose), rear head grille, side of chest tablet, wheeled base from above.
+  Commons: https://commons.wikimedia.org/wiki/File:Pepper_robot_off.jpg
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/5/5c/Pepper_robot_off.jpg
+  Licence: CC BY-SA 3.0
+  Author:  Hanonimas, Futako-Tamagawa Rise showroom, 7 November 2015
+  Size:    2448 x 3264
+
+06-threequarter-alex-knight-unsplash.jpg
+  Angle: Face and upper torso close-up; cyan/white eye rings, shoulder LED bars, chest tablet edge, “pepper” nameplate.
+  Commons: https://commons.wikimedia.org/wiki/File:Alex_Knight_2017-01-30_(Unsplash).jpg
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/9/90/Alex_Knight_2017-01-30_%28Unsplash%29.jpg
+  Licence: CC0 1.0 Universal (Unsplash, published before 5 June 2017)
+  Author:  Alex Knight (agkdesign), Unsplash photo 2EJCSULRwC8
+  Size:    4896 x 3264
+
+07-chest-tablet-pepper-a-humanoid-robot.jpg
+  Angle: Live Pepper in foreground with lit chest tablet; official SoftBank poster of Pepper (front, tablet, base) behind. Eye rings in this photo are purple — colour not to be copied in keyframes.
+  Commons: https://commons.wikimedia.org/wiki/File:Pepper_a_humanoid_robot.jpg
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/d/d5/Pepper_a_humanoid_robot.jpg
+  Licence: CC BY-SA 4.0
+  Author:  Kukarobot, 9 September 2019
+  Size:    3174 x 2309
+
+08-fullbody-peper-school.jpg
+  Angle: Full body, right hand raised in a greeting, chest tablet, triangular wheeled base. Useful pose reference for Scene 4.
+  Commons: https://commons.wikimedia.org/wiki/File:Peper.jpg
+  Direct:  https://upload.wikimedia.org/wikipedia/commons/5/55/Peper.jpg
+  Licence: CC0 1.0 Universal (public domain dedication)
+  Author:  Nebojsa.pavic, 16 January 2023
+  Size:    4000 x 6000
+
+Licence URLs:
+  CC BY-SA 4.0 — https://creativecommons.org/licenses/by-sa/4.0/
+  CC BY-SA 3.0 — https://creativecommons.org/licenses/by-sa/3.0/
+  CC0 1.0      — https://creativecommons.org/publicdomain/zero/1.0/
