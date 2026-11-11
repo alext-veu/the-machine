@@ -29,3 +29,13 @@ Research and engineering workspace for restoring a **SoftBank Robotics / Aldebar
 - P5: assess on-board auxiliary computer only after external proof of concept.
 
 Repository root README describes a separate *Person of Interest*-inspired web experience; this subproject is physical robotics R&D and does not change that application.
+
+## Existing AI upgrade research — start here
+
+Before designing new firmware or a commercial cloud platform, review our [**AI retrofit research catalogue**](research/README.md), containing:
+
+- [Evidence catalogue: real projects, research papers and commercial Pepper+](research/evidence-catalogue.md)
+- [Firmware/SDK compatibility, code reuse and licence assessment](research/technical-assessment.md)
+- [Validation experiments and go/no-go gates](research/validation-backlog.md)
+
+**Finding:** modern AI has already been connected to Pepper via NAOqi 2.5 / ROS and NAOqi 2.9 / QiSDK. Published Jetson/RealSense hardware upgrades also exist. Full independent replacement of the motion/safety firmware remains unverified. The installed OS on our own Pepper is still unknown.
