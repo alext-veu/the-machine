@@ -2,7 +2,7 @@
 
 The first trailer (`../pepper-revival-the-awakening.mp4`) animates still images. This pack is for making a version with real motion — Pepper lifting his head, Boris walking in, an energy burst — using an AI image-to-video generator.
 
-**The key change from the original prompt:** do not ask for one 20-second film. Generators hold a character far better when each shot is a separate 4–8 second generation that starts from one of our own images. Generate the six shots below, pick the best take of each, then cut them together.
+**The key change from the original prompt:** do not ask for one 20-second film. Generators hold a character far better when each shot is a separate 4–8 second generation that starts from one of our own images. Generate the seven shots below, pick the best take of each, then cut them together.
 
 ## Which tool
 
@@ -16,7 +16,7 @@ Capabilities below are from vendor and review pages read on 11 November 2026, no
 | **Seedance 2.0 / 2.5** | Many reference images per shot; longer clips | 2.5 stops at 1080p |
 | **Runway Gen-4.5** | Follows camera direction closely | — |
 
-Recommended route: generate shots 1–5 in **Kling 3.0** (it accepts our start and end frames) and shot 6, the spoken line, in **Veo 3.1** or **Grok Imagine 1.5**. To stay in one subscription, do all six in Grok Imagine 1.5 using image-to-video. A multi-model site such as Higgsfield gives access to several of these from one login.
+Recommended route: generate the silent shots (1, 2, 3, 4 and 5) in **Kling 3.0** (it accepts our start and end frames) and the two shots with speech (2B and 6) in **Veo 3.1** or **Grok Imagine 1.5**. To stay in one subscription, do all seven in Grok Imagine 1.5 using image-to-video. A multi-model site such as Higgsfield gives access to several of these from one login.
 
 Some generators restrict realistic images of children as input. If a shot with Boris is refused, use the alternative noted on that shot.
 
@@ -27,7 +27,7 @@ Run `python3 make_keyframes.py` to regenerate. All frames are 1920×1080.
 | File | Use |
 |---|---|
 | `frames/s1-forgotten-start.jpg` | Start frame, shots 1 and 2 |
-| `frames/s2-door-light-end.jpg` | End frame, shot 2 (warm light from the open door) |
+| `frames/s2-door-light-end.jpg` | End frame, shot 2, and start frame, shot 2B (warm light from the open door) |
 | `frames/s3-touch-start.jpg` | Start frame, shot 3 (eyes dark) |
 | `frames/s3-touch-end-eyes-lit.jpg` | End frame, shot 3 (eyes glowing blue) |
 | `frames/s4-spark-start.jpg` | Start frame, shot 4 (dim, before the spark) |
@@ -67,6 +67,19 @@ Audio: door creak, a soft footstep, wind fading, a held string note beginning. N
 ```
 
 Alternative if the boy's shadow is not wanted: remove the shadow sentence; the light alone tells the story.
+
+### Shot 2B — "Who are you?" (7 s)
+
+Start frame: `s2-door-light-end.jpg` · Reference image for the boy: `pepper-reference-sheet.jpg` (top-left panel)
+
+```
+Same cupboard, now lit by warm light from the open door on the right. A boy of about ten with short dark brown hair, wearing a black jumper, dark jeans and dark trainers, walks slowly in from the right, seen from behind and slightly to the side. He steps carefully over the cables on the floor, stops an arm's length from the dusty robot and tilts his head, looking up at its bowed face. He brushes a little dust from the robot's arm with his fingertips, then asks quietly, with curiosity: "Who are you?" The robot does not move or answer. Dust hangs in the light between them. Camera: handheld, following just behind the boy's shoulder at his eye level, settling into a two-shot of the boy and the robot.
+Audio: soft footsteps on a dusty floor, the boy's quiet voice saying "Who are you?", then silence and faint wind. Only the boy speaks. A single held string note underneath.
+```
+
+His question is answered in shot 6, when Pepper says "Hello, Boris. I've been waiting for you."
+
+Alternative if the generator refuses a child on screen: keep the camera on the robot, show only the boy's shadow and his hand reaching into frame, and have the line spoken from off-screen.
 
 ### Shot 3 — The human touch (6 s)
 
@@ -115,9 +128,10 @@ Do not generate this. AI video renders text poorly. Reuse the title card from `.
 - Generate each shot three or four times and keep the best; expect to discard most takes.
 - Test at 720p, then re-run the winning prompt at full resolution.
 - If the robot's shape drifts, shorten the clip to 4–5 s and remove one action from the prompt.
+- Boris must look the same in shots 2B, 5 and 6. Use a tool mode that takes a reference image for 2B, and re-roll until his hair and clothes match the other shots.
 - If the generated dialogue voice is wrong, mute it and use `../audio/pepper_voice.wav` instead.
-- For a consistent score across all six clips, mute the generated music and lay the soundtrack from `../build_trailer.py` over the cut.
+- For a consistent score across all seven clips, mute the generated music and lay the soundtrack from `../build_trailer.py` over the cut.
 
 ## Assembly
 
-Order: 1 → 2 → 3 → 4 → 5 → 6 → title, about 40 seconds. Use hard cuts except a half-second dissolve from 2 to 3 and a white flash from 4 to 5. Fade to black over the last second of shot 6 before the title.
+Order: 1 → 2 → 2B → 3 → 4 → 5 → 6 → title, about 48 seconds. Use hard cuts except a half-second dissolve from 2 to 3 and a white flash from 4 to 5. Fade to black over the last second of shot 6 before the title.
